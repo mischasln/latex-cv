@@ -33,9 +33,8 @@ cache:
 script: # Change working directory each time so including files will work. Change back so the pdfs can be found for deployment. This way, building multiple files goes well.
  - cd Users/mism/Projects/cv/
  # Tectonic does not include makeindex, so that needs to be done manually.
- - tectonic ./main.tex
- - makeindex ./main.idx
- - tectonic ./main.tex --print
+ - tectonic ./mikhail-smolin-cv.tex
+ - tectonic ./mikhail-smolin-cv.tex --print
  - cd ../
 deploy:
   provider: releases
