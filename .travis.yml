@@ -8,4 +8,4 @@ before_install:
 - brew tap caskroom/cask
 - brew cask install mactex
 script:
-- pdflatex pdflatex --enable-write18 -shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error *.tex
+- pdflatex --enable-write18 -shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error *.tex
