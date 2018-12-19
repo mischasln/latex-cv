@@ -7,11 +7,11 @@ services:   docker
 tex-config:
 - tex-scheme=small
 - push-type=none
-- build-pattern=src/mikhail-smolin-cv.tex
+- build-pattern=Users/mism/Projects/cv/mikhail-smolin-cv.tex
 #- latexmk-flags=-dvi -f
 # Check at https://www.ctan.org/pkg/package-name in which TeX Live package a LaTeX package is contained.
 - packages=xkeyval, wrapfig, tikz, transparent, color, fontenc, fontawesome, moresize, multicol, array, graphicx, collection-latex, collection-langeuropean, exam, gillius, amssymb,amsmath, amscls, mathtools, thmtools, stmaryrd, xcolor, pdfpages, pgf, cancel, hyperref, pgfplots, listings, scalerel, stackengine, etoolbox, listofitems, marvosym, amsfonts, opensans, slantsc, fancyhdr, ulem, algorithms, algorithmicx, float, booktabs, enumitem, polynom, fancyvrb, makecmds, multirow, chngcntr, fvextra, upquote, lineno, ifplatform, xstring, framed, caption, collection-fontsrecommended, minted, pgfgantt, geometry, beamer, translator, environ, trimspaces, imakeidx, graphics, tools, oberdiek
 
 # We will use the docker image from https://hub.docker.com/r/strauman/travis-latexbuild/
 script:
-- docker run --mount src=$TRAVIS_BUILD_DIR/,target=/repo,type=bind strauman/travis-latexbuild:small
+- docker run --mount src=$TRAVIS_BUILD_DIR/cv,target=/repo,type=bind strauman/travis-latexbuild:small
