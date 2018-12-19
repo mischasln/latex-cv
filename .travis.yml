@@ -1,6 +1,9 @@
+sudo: required
+os: osx
+branches:
+  only:
+    - master
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
+- sudo apt-get update && sudo apt-get install -y --no-install-recommends texlive-full
 script:
-- mkdir _build
-- pdflatex -output-directory _build tex/your_file_1.tex
-- pdflatex -output-directory _build tex/your_file_2.tex
+- pdflatex pdflatex --enable-write18 -shell-escape -synctex=1 -interaction=nonstopmode -halt-on-error *.tex
