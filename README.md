@@ -1,6 +1,5 @@
 # latexcv - LaTex CV and Resume Collection
 
-[![Build Status](https://travis-ci.com/mischasln/cv.svg?branch=master)](https://travis-ci.org/mischasln/cv)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![GitLicense](https://gitlicense.com/badge/mischasln/cv)](https://gitlicense.com/license/mischasln/cv)
 

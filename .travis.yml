@@ -1,5 +1,0 @@
-sudo: required
-os: osx
-branches:
-  only:
-    - master
