@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.19)  7 JAN 2019 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.19)  7 JAN 2019 13:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1029,7 +1029,7 @@ LaTeX Font Info:    Font shape `T1/GilliusADF-LF/m/n' will be
 File: images/qrcode.png Graphic file (type png)
 <use images/qrcode.png>
 Package pdftex.def Info: images/qrcode.png  used on input line 336.
-(pdftex.def)             Requested size: 46.16234pt x 46.1737pt.
+(pdftex.def)             Requested size: 42.31802pt x 42.32785pt.
 LaTeX Font Info:    Font shape `T1/GilliusADF-LF/bx/n' in size <10> not availab
 le
 (Font)              Font shape `T1/GilliusADF-LF/b/n' tried instead on input li
@@ -1210,7 +1210,7 @@ s/GilliusADF-Bold.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arkandis/
 gillius/GilliusADF-Regular.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on mikhail-smolin-cv-2018.pdf (1 page, 4918324 bytes).
+Output written on mikhail-smolin-cv-2018.pdf (1 page, 4918314 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
