@@ -215,6 +215,86 @@
 
 }
 
+\newcommand{\cveventNow}[9]
+{
+	\vspace{8pt}
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
+		\textcolor{bgcol}{#1} 
+		
+		
+	\end{tabular*}
+	\vspace{-12pt}
+	\textcolor{softcol}{\hrule}
+	\vspace{6pt}
+	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+		\larrow{softcol}  #4\\[4pt]
+		\larrow{softcol}  #5\\[4pt]
+		\larrow{softcol}  #6\\[4pt]
+		\larrow{softcol}  #7\\[4pt]
+		\larrow{softcol}  #8\\[4pt]
+		\larrow{softcol}  #9\\[4pt]
+	\end{tabular*}
+	
+}
+
+\newcommand{\cveventMaster}[5]
+{
+	\vspace{8pt}
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
+		\textcolor{bgcol}{#1} 
+		
+		
+	\end{tabular*}
+	\vspace{-12pt}
+	\textcolor{softcol}{\hrule}
+	\vspace{6pt}
+	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+		\larrow{softcol}  #4\\[4pt]
+		\larrow{softcol}  #5\\[4pt]
+	\end{tabular*}
+	
+}
+
+\newcommand{\cveventGlasgow}[5]
+{
+	\vspace{8pt}
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
+		\textcolor{bgcol}{#1} 
+		
+		
+	\end{tabular*}
+	\vspace{-12pt}
+	\textcolor{softcol}{\hrule}
+	\vspace{6pt}
+	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+		\larrow{softcol}  #4\\[4pt]
+		\larrow{softcol}  #5\\[4pt]
+	\end{tabular*}
+	
+}
+
+\newcommand{\cveventBachelor}[5]
+{
+	\vspace{8pt}
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
+		\textcolor{bgcol}{#1} 
+		
+		
+	\end{tabular*}
+	\vspace{-12pt}
+	\textcolor{softcol}{\hrule}
+	\vspace{6pt}
+	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+		\larrow{softcol}  #4\\[4pt]
+		\larrow{softcol}  #5\\[4pt]
+	\end{tabular*}
+	
+}
+
 % creates a stretched box as 
 \newcommand{\cveventmeta}[2]
 {
@@ -277,8 +357,9 @@
 \vspace{-3pt}
 
 % use this for single words, e.g. CV or RESUME etc.
-\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{Mikhail Smolin}\hspace{5pt}}  \textcolor{sectcol}{\rule[-.2mm]{1mm}{.85cm}} \parbox[b]{3.8cm}{   \large{\textcolor{white}{{Consultant}}}\\
-\large{ \textcolor{white}{{Software Engineer}}}
+\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{Mikhail Smolin}\hspace{5pt}}  \textcolor{sectcol}{\rule[-.2mm]{1mm}{.85cm}} \parbox[b]{3.8cm}{   %\large{\textcolor{white}{{Project Manager}}}\\
+\large{\textcolor{white}{{Project Manager}}}\\
+\large{ \textcolor{white}{{IT Consultant}}}
 
 }
 \textcolor{sectcol}{\rule[-.2mm]{1mm}{.85cm}}
@@ -293,11 +374,11 @@
 %============================================================================%
 
 %---------------------------------------------------------------------------------------
-%	STATUS
+%	SUMMARY
 %----------------------------------------------------------------------------------------
-\cvsection{Status}
+\cvsection{Summary}
 
-Consultant, MSc Computer Science, focuses on automotive security and project management.
+Computer Science and Media (MSc) graduate pushing several years of international project experience. Having a background in the automotive industry as well as leading distributed development teams, I'm highly committed to end-to-end project development; from creating requirements and interfaces to the coordination of agile Software development and validation tasks. I have an analytical, result-driven mindset and I am very passionate about innovative IT projects. Not only I am a dedicated team player who is committed to achieving outstanding work results but also I'm fascinated by research and innovation where I have a great interest in expanding my knowledge as well as experiencing new professional and personal challenges.
 
 \vspace{12pt}
 
@@ -307,15 +388,13 @@ Consultant, MSc Computer Science, focuses on automotive security and project man
 \cvsection{Experience}
 
 %
-\cvevent{2/17 - now}{Consultant}{EXXETA AG}{Leading agile Software engineering according to Scrum and RESTful API design.}{Full-stack JavaScript and JavaEE development with regard to a variety of projects.}{Interpersonal communication with lead customers, mainly major automotive OEMs.}
+\cveventNow{2/17 - now}{Consultant}{EXXETA AG}{Lead distributed development teams according to Scrum in an agile project setup.}{Full-stack UI/UX Web development for major automotive OEMs and Tier 1 suppliers.}{Interpersonal communication in inter-cultural teams and across multiple time zones.}{Plan and direct all aspects of people activities within the development team.}{Manage budget and personnel including tracking and communication to stakeholders.}{Collaborate with external companies to develop long-term strategic partnerships.}
 
-\cvevent{3/16 - 1/17}{Automotive Security Researcher}{EXXETA AG}{Big Data research in the field of automotive cyber security with Python and MATLAB.}{I built a novel vehicular intrusion detection system using a deep neural network.}{The results of my work were presented and discussed to a public audience.}
+\cvevent{3/16 - 1/17}{Research Assistant and Master's Thesis}{EXXETA AG}{Big Data research in the field of automotive cyber security with Python and Matlab.}{I built a novel vehicular intrusion detection system using machine learning techniques.}{The results of my work were presented and discussed to a public audience.}
 
 \cvevent{4/14 - 10/14}{Working Student}{TWT GmbH}{I configured and deployed client-server systems such as Windows, Mac and Linux.}{My work also included networking, shell script programming and Tier II support.}{Additionally, I also translated business requirements into suitable technical solutions.}
 
-\cvevent{10/12 - 8/13}{Bachelor Student}{Robert Bosch GmbH}{Software development to graphically modeling ESP control module test sequences.}{Duties involved Java programming, test design in LabView and data analysis in MATLAB.}{Moreover, I created technical documentations according to the DDLC process.}
-
-\cvevent{10/10 - 9/12}{Student Assistant}{Ansbach Universtity}{As a tutor, I achieved strong interpersonal communication and listening expertise.}{I have built a strong sense of teamwork, purpose and promoted team development.}{Furthermore, I utilized analytical techniques to identify, analyze and solve problems.}
+\cvevent{10/12 - 8/13}{Intern and Bachelor's Thesis}{Robert Bosch GmbH}{Software development to graphically modeling ESP control module test sequences.}{Duties involved Java programming, test design in LabView and data analysis in Matlab.}{Moreover, I created technical documentations according to the DDLC process.}
 
 \vspace{12pt}
 
@@ -327,11 +406,11 @@ Consultant, MSc Computer Science, focuses on automotive security and project man
 
 \cvsection{Education}
 
-\cvevent{3/14 - 1/17}{Computer Science and Media, MSc $\varnothing$ 1.3}{Stuttgart Media University}{Master's thesis (1.0): »Anomaly-based intrusion detection for automotive networks«}{I proposed the applicability of detecting cyber attacks in vehicular networks.}{Using CAN recordings, I  trained an artificial neural network with Python and MATLAB.}
+\cveventMaster{3/14 - 1/17}{Computer Science and Media, MSc $\varnothing$ 1.3}{Stuttgart Media University}{Master's thesis (1.0): »Anomaly-based intrusion detection for automotive networks«}{I proposed the applicability of detecting cyber attacks on the vehicuar CAN bus.}
 
-\cvevent{9/15 - 2/16}{Advanced Computer Systems Development}{University of Glasgow}{I successfully attended courses in data mining, cyber security and intermediate English.}{Co-development of a virtual reality first-person game in C++ using the Unreal Engine.}{Implementation of an Android diagnostics tool from vehicle's sensor data using Java.}
+\cveventGlasgow{9/15 - 2/16}{Advanced Computer Systems Development}{University of Glasgow}{I successfully attended courses in data mining, cyber security and intermediate English.}{Implementation of an Android diagnostics tool from vehicle's sensor data using Java.}
 
-\cvevent{10/10 - 3/14}{Business Computer Science, BSc $\varnothing$ 2.3}{Ansbach University}{Bachelor's thesis (1.0): »Entwicklung eines Mechanismus zur Versionsverifikation von \\ \hspace{.81em} Prüfabläufen in der Steuergerätefertigung«}{In cooperation with Robert Bosch GmbH, I developed a desktop application with Java.}{Besides my computer science studies, I tutored students in statistics and mathematics.}
+\cveventBachelor{10/10 - 3/14}{Business Computer Science, BSc $\varnothing$ 2.3}{Ansbach University}{Bachelor's thesis (1.0): »Entwicklung eines Mechanismus zur Versionsverifikation von \\ \hspace{.81em} Prüfabläufen in der Steuergerätefertigung«}{In cooperation with Bosch Automotive Electronics, I developed a Java desktop application.}
 
 \end{minipage}}%
 \fcolorbox{white}{sectcol}{\begin{minipage}[c][0.95\textheight][t]{0.33\linewidth}
@@ -377,7 +456,7 @@ Consultant, MSc Computer Science, focuses on automotive security and project man
 \begin{metasection}{Technologies}
 
 \textcolor{white}{
-\icontext{Code}{12}{MATLAB, JavaScript, Python, R}{white} \\[6pt]
+\icontext{Code}{12}{JavaScript, Matlab, HTML5, Python}{white} \\[6pt]
 \icontext{Fire}{12}{Dojo, React, Django, TensorFlow}{white} \\[6pt]
 \icontext{Database}{12}{MySQL, PostgreSQL}{white} \\[6pt]
 \icontext{CodeFork}{12}{Git, Travis CI}{white} \\[6pt]
