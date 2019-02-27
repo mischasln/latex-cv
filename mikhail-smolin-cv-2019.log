@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.20)  27 FEB 2019 09:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.20)  27 FEB 2019 11:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1185,7 +1185,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 499.
 Here is how much of TeX's memory you used:
  21187 strings out of 492649
  415967 string characters out of 6129622
- 527417 words of memory out of 5000000
+ 526417 words of memory out of 5000000
  24647 multiletter control sequences out of 15000+600000
  23776 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1200,7 +1200,7 @@ s/GilliusADF-Bold.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/arkandis/
 gillius/GilliusADF-Regular.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on mikhail-smolin-cv-2019.pdf (1 page, 9832335 bytes).
+Output written on mikhail-smolin-cv-2019.pdf (1 page, 9832417 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
