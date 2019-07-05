@@ -176,7 +176,7 @@
 \newcommand{\cvsection}[1]
 {
 \colorbox{sectcol}{\mystrut \makebox[1\mpwidth][l]{
-\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{0pt} \larrow{bgcol} \textbf{\textcolor{white}{\uppercase{#1}}}\hspace{4pt}
+\textbf{\textcolor{white}{\uppercase{#1}}}\hspace{4pt}
 }}\\
 }
 
@@ -194,26 +194,6 @@
 %----------------------------------------------------------------------------------------
 %	 CV EVENT
 %----------------------------------------------------------------------------------------
-
-\newcommand{\cvevent}[6]
-{
-\vspace{8pt}
-	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
- 	\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
- 	\textcolor{bgcol}{#1} 
-
-
-	\end{tabular*}
-\vspace{-12pt}
-\textcolor{softcol}{\hrule}
-\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-\larrow{softcol}  #4\\[4pt]
-\larrow{softcol}  #5\\[4pt]
-\larrow{softcol}  #6\\[4pt]
-	\end{tabular*}
-
-}
 
 \newcommand{\cveventNow}[9]
 {
@@ -238,7 +218,7 @@
 	
 }
 
-\newcommand{\cveventMaster}[5]
+\newcommand{\cveventExxeta}[9]
 {
 	\vspace{8pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
@@ -253,11 +233,15 @@
 	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
 		\larrow{softcol}  #4\\[4pt]
 		\larrow{softcol}  #5\\[4pt]
+		\larrow{softcol}  #6\\[4pt]
+		\larrow{softcol}  #7\\[4pt]
+		\larrow{softcol}  #8\\[4pt]
+		\larrow{softcol}  #9\\[4pt]
 	\end{tabular*}
 	
 }
 
-\newcommand{\cveventGlasgow}[5]
+\newcommand{\cveventMasterThesis}[6]
 {
 	\vspace{8pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
@@ -272,11 +256,12 @@
 	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
 		\larrow{softcol}  #4\\[4pt]
 		\larrow{softcol}  #5\\[4pt]
+		\larrow{softcol}  #6\\[4pt]
 	\end{tabular*}
 	
 }
 
-\newcommand{\cveventBachelor}[5]
+\newcommand{\cveventMaster}[6]
 {
 	\vspace{8pt}
 	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
@@ -291,6 +276,47 @@
 	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
 		\larrow{softcol}  #4\\[4pt]
 		\larrow{softcol}  #5\\[4pt]
+		\larrow{softcol}  #6\\[4pt]
+	\end{tabular*}
+	
+}
+
+\newcommand{\cveventGlasgow}[6]
+{
+	\vspace{8pt}
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
+		\textcolor{bgcol}{#1} 
+		
+		
+	\end{tabular*}
+	\vspace{-12pt}
+	\textcolor{softcol}{\hrule}
+	\vspace{6pt}
+	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+		\larrow{softcol}  #4\\[4pt]
+		\larrow{softcol}  #5\\[4pt]
+		\larrow{softcol}  #6\\[4pt]
+	\end{tabular*}
+	
+}
+
+\newcommand{\cveventBachelor}[6]
+{
+	\vspace{8pt}
+	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
+		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
+		\textcolor{bgcol}{#1} 
+		
+		
+	\end{tabular*}
+	\vspace{-12pt}
+	\textcolor{softcol}{\hrule}
+	\vspace{6pt}
+	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
+		\larrow{softcol}  #4\\[4pt]
+		\larrow{softcol}  #5\\[4pt]
+		\larrow{softcol}  #6\\[4pt]
 	\end{tabular*}
 	
 }
@@ -357,13 +383,11 @@
 \vspace{-3pt}
 
 % use this for single words, e.g. CV or RESUME etc.
-\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{Mikhail Smolin}\hspace{5pt}}  \textcolor{sectcol}{\rule[-.2mm]{1mm}{.85cm}} \parbox[b]{3.8cm}{   %\large{\textcolor{white}{{Project Manager}}}\\
-\large{\textcolor{white}{{IT Consultant \&}}}\\
-\large{\textcolor{white}{{Automotive Security}}}
+\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{Mikhail Smolin}} \textcolor{sectcol}{\rule[-.2mm]{1mm}{1cm}} \parbox[b]{5.5cm}{
+\Large{\textcolor{white}{{Senior Software Architect}}}\\
+\large{\textcolor{white}{{Daimler AG, Stuttgart, Germany}}}
 
-}
-\textcolor{sectcol}{\rule[-.2mm]{1mm}{.85cm}}
-\includegraphics[height=.11\linewidth]{images/qrcode}}}
+}}}
 
 \vspace{12pt}
 
@@ -387,14 +411,11 @@ Computer Science and Media (MSc) graduate pushing several years of international
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
 
-%
-\cveventNow{2/17 - now}{Consultant}{EXXETA AG}{Lead distributed development teams according to Scrum in an agile project setup.}{Full-stack UI/UX Web development for major automotive OEMs and Tier 1 suppliers.}{Interpersonal communication in inter-cultural teams and across multiple time zones.}{Plan and direct all aspects of people activities within the development team.}{Manage budget and personnel including tracking and communication to stakeholders.}{Collaborate with external companies to develop long-term strategic partnerships.}
+\cveventNow{7/19 - now}{Senior Software Architect}{Daimler AG}{To be completed... :) }{To be completed... :) }{To be completed... :) }{To be completed... :) }{To be completed... :) }{To be completed... :) }
 
-\cvevent{3/16 - 1/17}{Research Assistant and Master's Thesis}{EXXETA AG}{Big Data research in the field of automotive cyber security with Python and Matlab.}{I built a novel vehicular intrusion detection system using machine learning techniques.}{The results of my work were presented and discussed to a public audience.}
+\cveventExxeta{2/17 - 6/19}{Consultant}{EXXETA AG}{Lead distributed development teams according to Scrum in an agile project setup.}{Full-stack UI/UX Web development for major automotive OEMs and Tier 1 suppliers.}{Interpersonal communication in inter-cultural teams and across multiple time zones.}{Plan and direct all aspects of people activities within the development team.}{Manage budget and personnel including tracking and communication to stakeholders.}{Collaborate with external companies to develop long-term strategic partnerships.}
 
-\cvevent{4/14 - 10/14}{Working Student}{TWT GmbH}{I configured and deployed client-server systems such as Windows, Mac and Linux.}{My work also included networking, shell script programming and Tier II support.}{Additionally, I also translated business requirements into suitable technical solutions.}
-
-\cvevent{10/12 - 8/13}{Intern and Bachelor's Thesis}{Robert Bosch GmbH}{Software development to graphically modeling ESP control module test sequences.}{Duties involved Java programming, test design in LabView and data analysis in Matlab.}{Moreover, I created technical documentations according to the DDLC process.}
+\cveventMasterThesis{3/16 - 1/17}{Research Assistant and Master's Thesis}{EXXETA AG}{Big Data research in the field of automotive cyber security with Python and Matlab.}{I built a novel vehicular intrusion detection system using machine learning techniques.}{The results of my work were presented and discussed to a public audience.}
 
 \vspace{12pt}
 
@@ -406,11 +427,11 @@ Computer Science and Media (MSc) graduate pushing several years of international
 
 \cvsection{Education}
 
-\cveventMaster{3/14 - 1/17}{Computer Science and Media, MSc $\varnothing$ 1.3}{Stuttgart Media University}{Master's thesis (1.0): »Anomaly-based intrusion detection for automotive networks«}{I proposed the applicability of detecting cyber attacks on the vehicular CAN bus.}
+\cveventMaster{3/14 - 1/17}{Computer Science and Media, MSc $\varnothing$ 1.3}{Stuttgart Media University}{Master's thesis (1.0): »Anomaly-based intrusion detection for automotive networks«}{I proposed the applicability of detecting cyber attacks on the vehicular CAN bus.}{By means of a self-learning mechanism, a neural network was trained and evaluated.}
 
-\cveventGlasgow{9/15 - 2/16}{Advanced Computer Systems Development}{UWS Scotland}{I successfully attended courses in data mining, cyber security and intermediate English.}{Implementation of an Android diagnostics tool from vehicle's sensor data using Java.}
+\cveventGlasgow{9/15 - 2/16}{Advanced Computer Systems Development}{UWS Scotland}{I successfully attended courses in data mining, cyber security and intermediate English.}{Implementation of an Android diagnostics tool from vehicle's sensor data using Java.}{Studying abroad was a great opportunity to collect experiences in an international context.}
 
-\cveventBachelor{10/10 - 3/14}{Business Informatics, BA $\varnothing$ 2.3}{Ansbach University}{Bachelor's thesis (1.0): »Entwicklung eines Mechanismus zur Versionsverifikation von \\ \hspace{.81em} Prüfabläufen in der Steuergerätefertigung«}{In cooperation with Bosch Automotive Electronics, I developed a Java desktop application.}
+\cveventBachelor{10/10 - 3/14}{Business Informatics, BA $\varnothing$ 2.3}{Ansbach University}{Bachelor's thesis (1.0): »Entwicklung eines Mechanismus zur Versionsverifikation von \\ \hspace{.81em} Prüfabläufen in der Steuergerätefertigung«}{In cooperation with Bosch Automotive Electronics, I developed a Java desktop application.}{GUI-based tool for analyzing and verifying automotive ESP test sequences.}
 
 \end{minipage}}%
 \fcolorbox{white}{sectcol}{\begin{minipage}[c][0.95\textheight][t]{0.33\linewidth}
@@ -427,7 +448,7 @@ Computer Science and Media (MSc) graduate pushing several years of international
 \begin{metasection}{Contact}
 
 	\icontext{MapMarker}{12}{Stuttgart, Germany}{white}\\[6pt]
-	\icontext{Whatsapp}{12}{+49 152 52116195}{white}\\[6pt]
+	\icontext{Whatsapp}{12}{+49 176 41768976}{white}\\[6pt]
 	\iconemail{Envelope}{12}{mikhail@smolin.io}{mikhail@smolin.io}{white}\\[6pt]
 	\iconhref{MousePointer}{12}{smolin.io}{https://smolin.io/}{white}\\[6pt]
 	
@@ -441,14 +462,9 @@ Computer Science and Media (MSc) graduate pushing several years of international
 
 \begin{metasection}{Languages}
 
-\icontext{Home}{12}{German}{white}\\
-\textcolor{white}{Native language (CEFR C2)}\\[6pt]
-
-\icontext{Group}{12}{English}{white}\\
-\textcolor{white}{Full professional proficiency (CEFR C1)}\\[6pt]
-
-\icontext{Comments}{12}{Russian}{white}\\
-\textcolor{white}{Very good command (CEFR B2)}\\[6pt]
+\icontext{Home}{12}{German (CEFR C2)}{white}\\[6pt]
+\icontext{Group}{12}{English (CEFR C1)}{white}\\[6pt]
+\icontext{Comments}{12}{Russian (CEFR B2)}{white}
 
 
 \end{metasection}
@@ -456,10 +472,10 @@ Computer Science and Media (MSc) graduate pushing several years of international
 \begin{metasection}{Technologies}
 
 \textcolor{white}{
-\icontext{Code}{12}{HTML5, JavaScript, Matlab, Python}{white} \\[6pt]
-\icontext{Fire}{12}{Dojo, React, Django, TensorFlow}{white} \\[6pt]
-\icontext{Database}{12}{MySQL, PostgreSQL}{white} \\[6pt]
-\icontext{CodeFork}{12}{Git, Travis CI}{white} \\[6pt]
+\icontext{Code}{12}{HTML5, JavaScript, CSS3, Matlab}{white}\\[6pt]
+\icontext{Fire}{12}{Dojo, React, Django, TensorFlow}{white}\\[6pt]
+\icontext{Database}{12}{MySQL, PostgreSQL}{white}\\[6pt]
+\icontext{CodeFork}{12}{Git, Travis CI}{white}
 }
 \end{metasection}
 
@@ -467,8 +483,8 @@ Computer Science and Media (MSc) graduate pushing several years of international
 
 \textcolor{white}{
 \icontext{Code}{12}{IntelliJ, VS Code, Atom, PyCharm}{white}\\[6pt] \icontext{CodeFork}{12}{GitKraken, GitLab, Atlassian}{white}\\[6pt]
-\icontext{Terminal}{12}{Terminal}{white}
-\icontext{Cube}{12}{Axure, Sketch}{white}
+\icontext{Terminal}{12}{Shell, Docker, Homebrew}{white}\\[6pt]
+\icontext{Cube}{12}{Axure, Sketch, Office}{white}
 }
 \end{metasection}
 
@@ -483,6 +499,12 @@ Computer Science and Media (MSc) graduate pushing several years of international
 	\textcolor{white}{\LARGE{\icon{Automobile}{24}{white} \icon{Motorcycle}{24}{white}}}
 	
 \end{metasection}
+
+\vspace{-2pt}
+
+\begin{center}
+	\includegraphics[height=.3\linewidth]{images/qrcode}
+\end{center}
 
 \end{minipage}}
 
