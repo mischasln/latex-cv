@@ -1,500 +1,198 @@
-%============================================================================%
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
 %
-%	DOCUMENT DEFINITION
-%
-%============================================================================%
-
-\documentclass[10pt,A4]{article}	
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
 
 
-%============================================================================%
-%
-%	ENCODING
-%
-%============================================================================%
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\usepackage[utf8]{inputenc}		
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
-%============================================================================%
-%
-%	LOGIC
-%
-%============================================================================%
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}                 % depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-\usepackage{xifthen}
-
-%============================================================================%
-%
-%	FONT
-%
-%============================================================================%
-
-% some tex-live fonts - choose your own
-
-%\usepackage[defaultsans]{droidsans}
-%\usepackage[default]{comfortaa}
-%\usepackage{cmbright}
-%\usepackage[default]{raleway}
-%\usepackage{fetamont}
-\usepackage[default]{gillius}
-%\usepackage[light,math]{iwona}
-%\usepackage[thin]{roboto}
+% font loading
 \usepackage{amssymb}
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
 
-% set font default
-\renewcommand*\familydefault{\sfdefault} 	
-\usepackage[T1]{fontenc}
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
 
-% more font size definitions
-\usepackage{moresize}		
+% Signature
+\usepackage{ragged2e}
+\usepackage[export]{adjustbox}
 
-\usepackage{fontawesome}
+% personal data
+\name{Mikhail}{Smolin}
+\title{\large IT eDiscovery \& Corporate Data Protection \\ Mercedes-Benz Group AG, Stuttgart, Germany}                               % optional, remove / comment the line if not wanted
+\born{13 October 1985}                                 % optional, remove / comment the line if not wanted
+\address{Martin-Luther-Str. 71}{70372 Stuttgart, Germany}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49~(176)~30915134}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{mikhail@smolin.io}                               % optional, remove / comment the line if not wanted
+\homepage{smolin.io}                         % optional, remove / comment the line if not wanted
 
-%----------------------------------------------------------------------------------------
-%	PAGE LAYOUT  DEFINITIONS
-%----------------------------------------------------------------------------------------
-
-%debug page outer frames
-%\usepackage{showframe}			
-
-
-%define page styles using geometry
-\usepackage[a4paper]{geometry}		
-
-% for example, change the margins to 2 inches all round
-\geometry{top=1cm, bottom=-.6cm, left=0.4cm, right=1cm} 	
-
-
-%less space between header and content
-\setlength{\headheight}{-5pt}		
-
-%indentation is zero
-\setlength{\parindent}{0mm}
-
-%----------------------------------------------------------------------------------------
-%	TABLE /ARRAY DEFINITIONS
-%---------------------------------------------------------------------------------------- 
-
-%for layouting tables
-\usepackage{multicol}			
-\usepackage{multirow}
-
-%extended aligning of tabular cells
-\usepackage{array}
-
-\newcolumntype{x}[1]{%
->{\raggedleft\hspace{0pt}}p{#1}}%
-
-
-%----------------------------------------------------------------------------------------
-%	GRAPHICS DEFINITIONS
-%---------------------------------------------------------------------------------------- 
-
-%for header image
-\usepackage{graphicx}
-
-%for floating figures
-\usepackage{wrapfig}
-\usepackage{float}
-%\floatstyle{boxed} 
-%\restylefloat{figure}
-
-%for drawing graphics		
-\usepackage{tikz}				
-\usetikzlibrary{shapes, backgrounds,mindmap, trees}
+% Social icons
+\social[linkedin]{mikhailsmolin}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{ji\_doe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
+% \social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
+% \social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
+% \social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
+% \social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
+% \social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
+% \social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
 
 
-%----------------------------------------------------------------------------------------
-%	Color DEFINITIONS
-%---------------------------------------------------------------------------------------- 
-\usepackage{transparent}
-\usepackage{color}
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{me}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-%accent color
-\definecolor{complcol}{RGB}{250,150,10}
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
 
-%dark background color
-\definecolor{bgcol}{RGB}{110,110,110}
-
-%light background / accent color
-\definecolor{softcol}{RGB}{225,225,225}
-
-\definecolor{sectcol}{RGB}{0,120,150}
-
-
-%Package for links, must be the last package used
-\usepackage[hidelinks]{hyperref}
-
-%============================================================================%
-%
-%
-%	DEFINITIONS
-%
-%
-%============================================================================%
-
-% returns minipage width minus two times \fboxsep
-% to keep padding included in width calculations
-\newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
-	
-
-%----------------------------------------------------------------------------------------
-% 	ARROW GRAPHICS in Tikz
-%----------------------------------------------------------------------------------------
-
-% a six pointed arrow poiting to the left
-\newcommand{\tzlarrow}{(0,0) -- (0.2,0) -- (0.3,0.2) -- (0.2,0.4) -- (0,0.4) -- (0.1,0.2) -- cycle;}	
-
-% include the left arrow into a tikz picture
-% param1: fill color
-%
-\newcommand{\larrow}[1]
-{\begin{tikzpicture}[scale=0.58]
-	 \filldraw[fill=#1!100,draw=#1!100!black]  \tzlarrow
- \end{tikzpicture}
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+% Definition of new commands to create the signature
+\newcommand{\sign}[3]{
+    \vfill
+    \includegraphics[width=0.4\textwidth, right]{#3}
+    \begin{FlushRight}
+    #2, \today, #1
+    \end{FlushRight}
+    \vfill
 }
 
-% a six pointed arrow poiting to the right
-\newcommand{\tzrarrow}{ (0,0.2) -- (0.1,0) -- (0.3,0) -- (0.2,0.2) -- (0.3,0.4) -- (0.1,0.4) -- cycle;}
-
-% include the right arrow into a tikz picture
-% param1: fill color
-%
-\newcommand{\rarrow}
-{\begin{tikzpicture}[scale=0.7]
-	\filldraw[fill=sectcol!100,draw=sectcol!100!black] \tzrarrow
- \end{tikzpicture}
-}
-
-%----------------------------------------------------------------------------------------
-%	custom sections
-%----------------------------------------------------------------------------------------
-
-% create a coloured box with arrow and title as cv section headline
-% param 1: section title
-%
-\newcommand{\cvsection}[1]
-{
-\colorbox{sectcol}{\mystrut \makebox[1\mpwidth][l]{
-\vspace{2pt}\hspace{2pt}\textbf{\textcolor{white}{\normalsize\uppercase{#1}}}\hspace{4pt}
-}}\\
-}
-
-% create a coloured arrow with title as cv meta section section
-% param 1: meta section title
-%
-\newenvironment{metasection}[1] {
-	\vspace{6pt}
-	\begin{center}
-		\textcolor{white}{\large{\uppercase{#1}}}\\
-	\normalsize
-	\parbox{0.7\mpwidth}{\textcolor{white}	\hrule}
-}{\end{center}}
-
-%----------------------------------------------------------------------------------------
-%	 CV EVENT
-%----------------------------------------------------------------------------------------
-
-\newcommand{\cveventNow}[9]
-{
-	\vspace{8pt}
-	\begin{tabular*}{1\mpwidth}{p{0.47\mpwidth}  x{0.5\mpwidth}}
-		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
-		\textcolor{bgcol}{#1} 
-		
-		
-	\end{tabular*}
-	\vspace{-12pt}
-	\textcolor{softcol}{\hrule}
-	\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-		\larrow{softcol}  #4\\[4pt]
-		\larrow{softcol}  #5\\[4pt]
-		\larrow{softcol}  #6\\[4pt]
-		\larrow{softcol}  #7\\[4pt]
-		\larrow{softcol}  #8\\[4pt]
-		\larrow{softcol}  #9\\[4pt]
-	\end{tabular*}
-	
-}
-
-\newcommand{\cveventMbc}[9]
-{
-	\vspace{8pt}
-	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
-		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
-		\textcolor{bgcol}{#1} 
-		
-		
-	\end{tabular*}
-	\vspace{-12pt}
-	\textcolor{softcol}{\hrule}
-	\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-		\larrow{softcol}  #4\\[4pt]
-		\larrow{softcol}  #5\\[4pt]
-		\larrow{softcol}  #6\\[4pt]
-		\larrow{softcol}  #7\\[4pt]
-		\larrow{softcol}  #8\\[4pt]
-		\larrow{softcol}  #9\\[4pt]
-	\end{tabular*}
-	
-}
-
-\newcommand{\cveventExxeta}[9]
-{
-	\vspace{8pt}
-	\begin{tabular*}{1\mpwidth}{p{0.55\mpwidth}  x{0.42\mpwidth}}
-		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
-		\textcolor{bgcol}{#1} 
-		
-		
-	\end{tabular*}
-	\vspace{-12pt}
-	\textcolor{softcol}{\hrule}
-	\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-		\larrow{softcol}  #4\\[4pt]
-		\larrow{softcol}  #5\\[4pt]
-		\larrow{softcol}  #6\\[4pt]
-		\larrow{softcol}  #7\\[4pt]
-		\larrow{softcol}  #8\\[4pt]
-		\larrow{softcol}  #9\\[4pt]
-	\end{tabular*}
-	
-}
-
-\newcommand{\cveventMaster}[7]
-{
-	\vspace{8pt}
-	\begin{tabular*}{1\mpwidth}{p{0.47\mpwidth}  x{0.5\mpwidth}}
-		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
-		\textcolor{bgcol}{#1} 
-		
-		
-	\end{tabular*}
-	\vspace{-12pt}
-	\textcolor{softcol}{\hrule}
-	\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-		\larrow{softcol}  #4\\[4pt]
-		\larrow{softcol}  #5\\[4pt]
-		\larrow{softcol}  #6\\[4pt]
-		\larrow{softcol}  #7\\[4pt]
-	\end{tabular*}
-	
-}
-
-\newcommand{\cveventGlasgow}[6]
-{
-	\vspace{8pt}
-	\begin{tabular*}{1\mpwidth}{p{0.47\mpwidth}  x{0.5\mpwidth}}
-		\textcolor{black}{\textbf{#2}} & \textcolor{complcol}{#3},
-		\textcolor{bgcol}{#1} 
-		
-		
-	\end{tabular*}
-	\vspace{-12pt}
-	\textcolor{softcol}{\hrule}
-	\vspace{6pt}
-	\begin{tabular*}{0.5\mpwidth}{p{\mpwidth}}
-		\larrow{softcol}  #4\\[4pt]
-		\larrow{softcol}  #5\\[4pt]
-		\larrow{softcol}  #6\\[4pt]
-	\end{tabular*}
-	
-}
-
-% creates a stretched box as 
-\newcommand{\cveventmeta}[2]
-{
-	\mbox{\mystrut \hspace{87pt}\textit{#1}}\\
-	#2
-}
-
-%----------------------------------------------------------------------------------------
-% CUSTOM STRUT FOR EMPTY BOXES
-%----------------------------------------- -----------------------------------------------
-\newcommand{\mystrut}{\rule[-.3\baselineskip]{0pt}{\baselineskip}}
-
-%----------------------------------------------------------------------------------------
-% CUSTOM LOREM IPSUM
-%----------------------------------------------------------------------------------------
-\newcommand{\lorem}
-{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.}
-
-\newcommand{\vcenteredinclude}[1]{\begingroup
-\setbox0=\hbox{\includegraphics{#1}}%
-\parbox{\wd0}{\box0}\endgroup}
-
-\newcommand*{\vcenteredhbox}[1]{\begingroup
-\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
-
-%----------------------------------------------------------------------------------------
-%	ICON-SET EMBEDDING
-%---------------------------------------------------------------------------------------- 
-
-\newcommand{\icon}[3]{\makebox(#2, #2){\textcolor{#3}{\csname fa#1\endcsname}}}	
-\newcommand{\icontext}[4]{
-	\vcenteredhbox{\icon{#1}{#2}{#4}} \vcenteredhbox{\textcolor{#4}{#3}}
-}
-\newcommand{\iconhref}[5]{
-    \vcenteredhbox{\icon{#1}{#2}{#5}} \href{#4}{\textcolor{#5}{#3}}
-}
-
-\newcommand{\iconemail}[5]{ 						%icon with email link
-    \vcenteredhbox{\icon{#1}{#2}{#5}} \href{mailto:#4}{\textcolor{#5}{#3}}
-}
-
-
-
-%============================================================================%
-%
-%
-%
-%	DOCUMENT CONTENT
-%
-%
-%
-%============================================================================%
 \begin{document}
-\fcolorbox{white}{white}{\begin{minipage}[c][0.95\textheight][t]{0.69\linewidth}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
 
+\section{Summary}
+Software professional and computer science (M.Sc.) graduate pushing several years of international IT
+project experience. Having a strong background in the automotive industry as well as leading
+distributed engineering teams, I am highly committed to end-to-end IT project development; \linebreak from
+creating requirements and interfaces to the coordination of full-lifecycle software development and
+validation tasks. I have an analytical, result-driven mindset, and I am very passionate about
+information security, data privacy, machine learning, full-stack web development, and e-discovery. Not only I am a
+dedicated team player who is committed to achieving outstanding work results, but also I am
+fascinated by research, teaching and innovation where I have a keen interest in expanding my knowledge
+as well as experiencing new professional and personal challenges in a global context.
 
-		%---------------------------------------------------------------------------------------
-		%	TITLE HEADLINE
-		%----------------------------------------------------------------------------------------
-		\vspace{-3pt}
+\section{Experience}
+\cventry{04/2020 -- Present}{eDiscovery, CDP \& ISO Expert}{Mercedes-Benz Group AG}{Stuttgart, Germany}{}{
+\begin{itemize}
+\item[$-$] Technical leadership and execution of full lifecycle digitization and automation IT projects.
+\item[$-$] Vendor management to ensure adherence to budget, schedule, and scope on project level.
+\item[$-$] Responsible for understanding client’s requirements and delivering solution architectures.
+\item[$-$] Benchmarking and identification of tech innovations for internal and external stakeholders.
+\item[$-$] Further development of the group-wide eDiscovery, data protection and legal IT landscape.
+\item[$-$] Endorse investigation and compliance processes along legal requirements at headquarters.
+\end{itemize}}
 
-		% use this for single words, e.g. CV or RESUME etc.
-		\colorbox{bgcol}{\makebox[\mpwidth][c]{\HUGE{\textcolor{white}{Mikhail Smolin}} \textcolor{sectcol}{\rule[-.2mm]{1mm}{1cm}} \parbox[b]{5.5cm}{
-					\Large{\textcolor{white}{{eDiscovery, CDP \& ISO}}}\\
-					\normalsize{\textcolor{white}{{Mercedes-Benz Group AG, Germany}}}
+\cventry{07/2019 -- 03/2020}{Senior IT Architect}{Daimler AG}{Stuttgart, Germany}{}{
+\begin{itemize}
+\item[$-$] Supported driving digital transformation efforts across the broader powertrain landscape.
+\item[$-$] Analyzed processes and requirements with international cross-departmental professionals.
+\item[$-$] Collaborated with teams across production plants, to help and define the user experience.
+\item[$-$] Approved implementations, supported and coordinated developers and external partners.
+\item[$-$] Support of IT at international locations, especially within the scope of piloting new APIs.
+\item[$-$] Participated in various work packages of complex cross-plant strategic Daimler IT projects.
+\end{itemize}}
 
-				}}}
+\cventry{02/2017 -- 06/2019}{Software Engineer and Consultant}{EXXETA AG}{Stuttgart, Germany}{}{
+\begin{itemize}
+\item[$-$] Lead an international, distributed workforce according to Scrum in an agile project setup.
+\item[$-$] Full-stack Web and mobile development for major automotive OEMs and Tier 1 suppliers.
+\item[$-$] Interpersonal communication in cross-cultural project teams across different time zones.
+\item[$-$] Planned, directed, and coordinated all aspects of project activities within the work team.
+\item[$-$] Managed budget and personnel matters including tracking and reporting to stakeholders.
+\item[$-$] Collaborated with external service providers to develop long-term strategic partnerships.
+\end{itemize}}
 
-		\vspace{12pt}
+\pagebreak
 
-		%============================================================================%
-		%
-		%	CV SECTIONS AND EVENTS (MAIN CONTENT)
-		%
-		%============================================================================%
+\section{Education}
+\cventry{03/2014 -- 01/2017}{Computer Science, M.Sc.}{Stuttgart Media University}{Stuttgart, Germany}{\textit{$\varnothing$ 1.3}}{
+\begin{itemize}
+\item[$-$] Master’s thesis (\textit{$\varnothing$ 1.0}): »Anomaly-based intrusion detection for automotive networks«
+\item[$-$] I proposed the applicability of detecting cyberattacks on the vehicular CAN bus standard.
+\item[$-$] Using network recordings of a modern sedan, a neural network was trained and evaluated.
+\item[$-$] Courses: Machine learning, information privacy, secure systems, agile project management.
+\end{itemize}}
 
-		%---------------------------------------------------------------------------------------
-		%	SUMMARY
-		%----------------------------------------------------------------------------------------
-		\cvsection{Summary}
+\cventry{09/2015 -- 02/2016}{Computer Science, M.Sc.}{Glasgow University}{Glasgow, Scotland}{Erasmus Grant}{
+\begin{itemize}
+\item[$-$] I attended courses in data mining, cybersecurity, signal processing, and proficiency English.
+\item[$-$] Implementation of an Android car diagnostics tool from in-vehicle sensor data using Java.
+\item[$-$] Project: Mobile car diagnostics and performance app from in-vehicle OBD-II sensor data.
+\end{itemize}}
+\cventry{10/2010 -- 02/2014}{Business Informatics, B.Sc.}{Ansbach University oAS}{Ansbach, Germany}{\textit{$\varnothing$ 2.3}}{
+\begin{itemize}
+\item[$-$] Bachelor’s thesis (\textit{$\varnothing$ 1.0}): »Version verification of HIL test sequences in automotive ECU manufacturing«
+\item[$-$] In cooperation with Robert Bosch GmbH (Bosch Automotive Electronics), I developed a group-wide Java desktop application in order to provide mechanical and software engineers a tool for analyzing and verifying automotive electronic stability program test sequences.
+\end{itemize}}
 
-		Software expert and computer science (MSc) graduate pushing several years of international IT project experience. Having a strong background in the automotive industry as well as leading distributed engineering teams, I'm highly committed to end-to-end project development; from creating requirements and interfaces to the coordination of agile software development and validation tasks. I have an analytical, result-driven mindset and I am very passionate about cyber security, electronic discovery, web technologies and data protection. Not only I am a dedicated team player who is committed to achieving outstanding work results but also I'm fascinated by research and innovation where I have a great interest in expanding my knowledge as well as experiencing new professional and personal challenges in an international context.
+\section{Languages}
+\cvitemwithcomment{German}{CEFR C2}{Native Speaker}
+\cvitemwithcomment{English}{CEFR C1}{Master dissertation and presentations written in English.}
+\cvitemwithcomment{Russian}{CEFR B1}{Taken at Stuttgart University.}
+\cvitemwithcomment{Mandarin}{CEFR A1.1}{Taken at VHS Stuttgart.}
 
-		\vspace{12pt}
+\section{Computer skills}
+\cvdoubleitem{Programming}{MATLAB, Python}{Web}{JavaScript, HTML5, CSS3, XML}
+\cvdoubleitem{Database}{MySQL, PostgreSQL}{IDE}{IntelliJ IDEA, VS Code, PyCharm}
+\cvdoubleitem{Environment}{\LaTeX, Office, Jira, Azure DevOps}{OS}{Windows, Linux, Android, Apple}
 
-		%---------------------------------------------------------------------------------------
-		%	EXPERIENCE
-		%----------------------------------------------------------------------------------------
-		\cvsection{Experience}
+\section{Extra}
+\cvitemwithcomment{}{European driving licence}{}
 
-		\cveventNow{04/2020 - now}{eDiscovery, CDP \& ISO Expert}{Mercedes-Benz Group AG}{Technical leadership and execution of full lifecycle digitization and automation projects.}{Vendor management to ensure adherence to budget, schedule, and scope on project level.}{Responsible for understanding client's requirements and delivering solution architectures.}{Benchmarking and identification of tech innovations for internal and external stakeholders.}{Further development of the group-wide eDiscovery, data protection and legal IT landscape.}{Endorse investigation and compliance processes along legal requirements at headquarters.}
+% Signature
+\sign{Mikhail Smolin}{Stuttgart}{signature.png}
 
-		\cveventMbc{07/2019 - 03/2020}{Senior IT Architect}{Daimler AG}{Supported driving digital transformation efforts across the broader powertrain landscape.}{Analyzed processes and requirements with international cross-departmental specialists.}{Collaborated with teams across production plants, to help and define the user experience.}{Approved implementations, supported and coordinated engineers and external partners.}{Support of IT at international locations, especially within the scope of piloting new APIs.}{Participated in various work packages of complex cross-plant strategic Daimler IT projects.}
+\clearpage
 
-		\cveventExxeta{02/2017 - 06/2019}{Software Engineer and Consultant}{EXXETA AG}{Lead distributed development teams according to Scrum in an agile project setup.}{Full-stack UI/UX Web development for major automotive OEMs and Tier 1 suppliers.}{Interpersonal communication in inter-cultural teams and across multiple time zones.}{Planned and directed all aspects of people activities within the engineering team.}{Managed budget and personnel including tracking and communication to stakeholders.}{Collaborated with external companies to develop long-term strategic partnerships.}
-
-		\vspace{12pt}
-
-		%============================================================================%
-		%
-		%	EUDUCATION
-		%
-		%============================================================================%
-
-		\cvsection{Education}
-
-		\cveventMaster{03/2014 - 01/2017}{Computer Science, MSc $\varnothing$ 1.3}{Stuttgart Media University}{Master's thesis (1.0): »Anomaly-based intrusion detection for automotive networks«}{I proposed the applicability of detecting cyber attacks on the vehicular CAN bus.}{By means of a self-learning mechanism, a neural network was trained and evaluated.}{Courses: software engineering, data privacy, secure systems, agile project management.}
-
-		\cveventGlasgow{09/2015 - 02/2016}{Computer Science, MSc}{University of Glasgow}{I successfully attended courses in data mining, cyber security and intermediate English.}{Implementation of an Android diagnostics tool from vehicle's sensor data using Java.}{Project: mobile car diagnostics and performance app from vehicular on-board data.}
-
-	\end{minipage}}%
-\fcolorbox{white}{sectcol}{\begin{minipage}[c][0.95\textheight][t]{0.33\linewidth}
-
-		\vspace{18pt}
-		\begin{center}
-			{
-				\setlength{\fboxsep}{0pt}%
-				\setlength{\fboxrule}{0pt}%
-				\fbox{\includegraphics[width=.7\linewidth]{images/me}}
-			}
-		\end{center}
-
-		\begin{metasection}{Contact}
-
-			\icontext{MapMarker}{12}{Stuttgart, Germany}{white}\\[6pt]
-			\icontext{Phone}{12}{+49 176 30915134}{white}\\[6pt]
-			\iconemail{Envelope}{12}{mikhail.smolin@mercedes-benz.com}{mikhail.smolin@mercedes-benz.com}{white}\\[6pt]
-			\iconhref{MousePointer}{12}{https://smolin.io/}{https://smolin.io/}{white}\\[6pt]
-
-		\end{metasection}
-
-		%============================================================================%
-		%
-		%	META
-		%
-		%============================================================================%
-
-		\begin{metasection}{Languages}
-
-			\icontext{Home}{12}{German (native)}{white}\\[6pt]
-			\icontext{Group}{12}{English (CEFR C1)}{white}\\[6pt]
-			\icontext{Comments}{12}{Russian (CEFR B2)}{white}\\[6pt]
-			\icontext{Comment}{12}{Mandarin (CEFR A1)}{white}\\[6pt]
-
-
-		\end{metasection}
-
-		\begin{metasection}{Technologies}
-
-			\textcolor{white}{
-				\icontext{Code}{12}{HTML, JS, JEE, CSS, Python, Matlab}{white}\\[6pt]
-				\icontext{Fire}{12}{Dojo, React, Django, TensorFlow}{white}\\[6pt]
-				\icontext{Database}{12}{MySQL, PostgreSQL}{white}\\[6pt]
-				\icontext{CodeFork}{12}{Git, Travis CI}{white}\\[6pt]
-			}
-		\end{metasection}
-
-		\begin{metasection}{Tools}
-
-			\textcolor{white}{
-				\icontext{Code}{12}{IntelliJ, VS Code, Atom, PyCharm}{white}\\[6pt] \icontext{CodeFork}{12}{Jira, Confluence, Azure DevOps}{white}\\[6pt]
-				\icontext{Terminal}{12}{Shell, Docker, Homebrew}{white}\\[6pt]
-				\icontext{Cube}{12}{Relativity, Nuix, Office}{white}\\[6pt]
-			}
-		\end{metasection}
-
-		\begin{metasection}{Operating Systems}
-
-			\textcolor{white}{\LARGE{\icon{Apple}{24}{white} \icon{Linux}{24}{white}  \icon{Windows}{24}{white}}}
-
-		\end{metasection}
-
-		\begin{metasection}{Licences}
-
-			\textcolor{white}{\LARGE{\icon{Automobile}{24}{white} \icon{Motorcycle}{24}{white}}}
-
-		\end{metasection}
-
-		\vspace{-2pt}
-
-	\end{minipage}}
-
-%============================================================================%
-%
-%	ARTIFICIAL FOOTER
-%
-%============================================================================%
-
-\null
-\vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{Mikhail Smolin} $\cdot$ \textcolor{white}{2023}}}
-
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
+
+
+%% end of file `template.tex'.
+
