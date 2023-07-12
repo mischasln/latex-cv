@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  12 JUL 2023 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  12 JUL 2023 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,7 +1068,7 @@ Package rerunfilecheck Info: File `mikhail-smolin-cv-2023.out' has not changed.
 Here is how much of TeX's memory you used:
  28939 strings out of 478023
  552388 string characters out of 5842667
- 859558 words of memory out of 5000000
+ 859556 words of memory out of 5000000
  46728 multiletter control sequences out of 15000+600000
  541939 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1089,7 +1089,7 @@ pe1/public/lm/lmssbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 sso10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/tex
 live/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mikhail-smolin-cv-2023.pdf (2 pages, 2371157 bytes).
+Output written on mikhail-smolin-cv-2023.pdf (2 pages, 2371038 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
