@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  22 AUG 2023 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  22 AUG 2023 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,7 +855,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  129i,14n,122p,1036b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mikhail-smolin-cv-2023.pdf (2 pages, 976262 bytes).
+Output written on mikhail-smolin-cv-2023.pdf (2 pages, 976237 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
