@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  22 AUG 2023 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  5 MAR 2024 10:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Code/latex-cv/mikhail-smolin-cv-2023.tex
-(d:/Code/latex-cv/mikhail-smolin-cv-2023.tex
+**d:/Personal/Code/LaTeX/latex-cv/mikhail-smolin-cv-2024.tex
+(d:/Personal/Code/LaTeX/latex-cv/mikhail-smolin-cv-2024.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-15> (c:/texlive/2022/texmf-dist/tex/latex/moderncv/moderncv.cls
 Document Class: moderncv 2022-02-21 v2.3.1 modern curriculum vitae and letter document class
@@ -658,8 +658,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 107.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./mikhail-smolin-cv-2023.aux)
-\openout1 = `mikhail-smolin-cv-2023.aux'.
+) (./mikhail-smolin-cv-2024.aux)
+\openout1 = `mikhail-smolin-cv-2024.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
 LaTeX Font Info:    ... okay on input line 107.
@@ -756,9 +756,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 107.
-(./mikhail-smolin-cv-2023.out) (./mikhail-smolin-cv-2023.out)
+(./mikhail-smolin-cv-2024.out) (./mikhail-smolin-cv-2024.out)
 \@outlinefile=\write4
-\openout4 = `mikhail-smolin-cv-2023.out'.
+\openout4 = `mikhail-smolin-cv-2024.out'.
 
 \makecvheaddetailsbox=\box71
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 110.
@@ -829,36 +829,36 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./me.jpg>]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 163.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 174.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 163.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 174.
 <signature.pdf, id=53, 150.38182pt x 22.58438pt>
 File: signature.pdf Graphic file (type pdf)
 <use signature.pdf>
-Package pdftex.def Info: signature.pdf  used on input line 193.
+Package pdftex.def Info: signature.pdf  used on input line 206.
 (pdftex.def)             Requested size: 179.24962pt x 26.92085pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--193
- []\T1/lmss/m/n/10.95 (+20) Stuttgart, Au-gust 22, 2023, Mikhail Smolin
+Underfull \hbox (badness 10000) in paragraph at lines 206--206
+ []\T1/lmss/m/n/10.95 (+20) Stuttgart, March 5, 2024, Mikhail Smolin
  []
 
-[2 <./signature.pdf>] (./mikhail-smolin-cv-2023.aux)
-Package rerunfilecheck Info: File `mikhail-smolin-cv-2023.out' has not changed.
+[2 <./signature.pdf>] (./mikhail-smolin-cv-2024.aux)
+Package rerunfilecheck Info: File `mikhail-smolin-cv-2024.out' has not changed.
 (rerunfilecheck)             Checksum: 5D0527055F6AA4D6D61425C793DD53FE;536.
  ) 
 Here is how much of TeX's memory you used:
- 28942 strings out of 478023
- 552485 string characters out of 5842667
- 859556 words of memory out of 5000000
- 46728 multiletter control sequences out of 15000+600000
- 542040 words of font info for 138 fonts, out of 8000000 for 9000
+ 28927 strings out of 478023
+ 552331 string characters out of 5842667
+ 860547 words of memory out of 5000000
+ 46727 multiletter control sequences out of 15000+600000
+ 538458 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,14n,122p,1036b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,14n,122p,1051b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mikhail-smolin-cv-2023.pdf (2 pages, 976240 bytes).
+Output written on mikhail-smolin-cv-2024.pdf (2 pages, 975539 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
  9 named destinations out of 1000 (max. 500000)
- 38983 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 36935 words of extra memory for PDF output out of 42996 (max. 10000000)
 
