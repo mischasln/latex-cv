@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  5 MAR 2024 10:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.22)  26 MAR 2024 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,38 +648,42 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip111
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 107.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 107.
+Package hyperref Info: Option `breaklinks' set `true' on input line 106.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 106.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 107.
+(hyperref)                removing `\\' on input line 106.
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 107.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 106.
+
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 106.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./mikhail-smolin-cv-2024.aux)
 \openout1 = `mikhail-smolin-cv-2024.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 106.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -701,18 +705,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 107.
-Package microtype Info: Applying patch `item' on input line 107.
-Package microtype Info: Applying patch `toc' on input line 107.
-Package microtype Info: Applying patch `eqnum' on input line 107.
-Package microtype Info: Applying patch `footnote' on input line 107.
+LaTeX Info: Redefining \microtypecontext on input line 106.
+Package microtype Info: Applying patch `item' on input line 106.
+Package microtype Info: Applying patch `toc' on input line 106.
+Package microtype Info: Applying patch `eqnum' on input line 106.
+Package microtype Info: Applying patch `footnote' on input line 106.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 107.
+LaTeX Info: Redefining \showhyphens on input line 106.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -755,91 +759,91 @@ Package microtype Info: Loading generic protrusion settings for font family
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 107.
+Package hyperref Info: Link coloring OFF on input line 106.
 (./mikhail-smolin-cv-2024.out) (./mikhail-smolin-cv-2024.out)
 \@outlinefile=\write4
 \openout4 = `mikhail-smolin-cv-2024.out'.
 
 \makecvheaddetailsbox=\box71
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 110.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 110.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 110.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 110.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 110.
+(Font)              <10> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 110.
+(Font)              <7> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 110.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 110.
+(Font)              <5> on input line 109.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 110.
- (c:/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 110.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 110.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 109.
  (c:/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 110.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 109.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 109.
+ (c:/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
 \makecvheadpicturebox=\box72
-<me.jpg, id=35, 1645.64813pt x 1645.64813pt>
+<me.jpg, id=36, 1645.64813pt x 1645.64813pt>
 File: me.jpg Graphic file (type jpg)
 <use me.jpg>
-Package pdftex.def Info: me.jpg  used on input line 110.
+Package pdftex.def Info: me.jpg  used on input line 109.
 (pdftex.def)             Requested size: 64.0pt x 63.98164pt.
 \makecvheaddetailswidth=\skip112
 \makecvheadpicturewidth=\skip113
 \makecvheadnamebox=\box73
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 112.
+(Font)              <10.95> on input line 111.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 112.
+(Font)              <8> on input line 111.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 112.
+(Font)              <6> on input line 111.
 [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./me.jpg>]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 174.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 176.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 174.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 176.
 <signature.pdf, id=53, 150.38182pt x 22.58438pt>
 File: signature.pdf Graphic file (type pdf)
 <use signature.pdf>
-Package pdftex.def Info: signature.pdf  used on input line 206.
+Package pdftex.def Info: signature.pdf  used on input line 208.
 (pdftex.def)             Requested size: 179.24962pt x 26.92085pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
- []\T1/lmss/m/n/10.95 (+20) Stuttgart, March 5, 2024, Mikhail Smolin
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+ []\T1/lmss/m/n/10.95 (+20) Stuttgart, March 26, 2024, Mikhail Smolin
  []
 
 [2 <./signature.pdf>] (./mikhail-smolin-cv-2024.aux)
@@ -847,18 +851,18 @@ Package rerunfilecheck Info: File `mikhail-smolin-cv-2024.out' has not changed.
 (rerunfilecheck)             Checksum: 5D0527055F6AA4D6D61425C793DD53FE;536.
  ) 
 Here is how much of TeX's memory you used:
- 28927 strings out of 478023
- 552331 string characters out of 5842667
- 860547 words of memory out of 5000000
- 46727 multiletter control sequences out of 15000+600000
- 538458 words of font info for 130 fonts, out of 8000000 for 9000
+ 28933 strings out of 478023
+ 552341 string characters out of 5842667
+ 860304 words of memory out of 5000000
+ 46725 multiletter control sequences out of 15000+600000
+ 538690 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,14n,122p,1051b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mikhail-smolin-cv-2024.pdf (2 pages, 975539 bytes).
+ 129i,14n,122p,2764b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on mikhail-smolin-cv-2024.pdf (2 pages, 974329 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 139 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  9 named destinations out of 1000 (max. 500000)
  36935 words of extra memory for PDF output out of 42996 (max. 10000000)
 
