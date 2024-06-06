@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1713965054 "d:/Personal/Code/LaTeX/latex-cv/mikhail-smolin-cv-2024.tex" "mikhail-smolin-cv-2024.pdf" "mikhail-smolin-cv-2024" 1713965057
+["pdflatex"] 1717674481 "d:/Personal/Code/LaTeX/latex-cv/mikhail-smolin-cv-2024.tex" "mikhail-smolin-cv-2024.pdf" "mikhail-smolin-cv-2024" 1717674487
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1658422613 2920 d63721872b8c77041b88e51b8f7c291d ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1658422613 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1658422613 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -235,11 +235,11 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1658442207 4634946 d2848b86361d48ab78eef9225f65482b ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1658442278 2864711 81fbb8313a4ef7f853da80fd5a8f12d0 ""
   "c:/texlive/2022/texmf.cnf" 1658442187 713 e69b156964470283e0530f5060668171 ""
-  "d:/Personal/Code/LaTeX/latex-cv/mikhail-smolin-cv-2024.tex" 1713965054 11718 68af930077888a56ae7830339aa335e5 ""
+  "d:/Personal/Code/LaTeX/latex-cv/mikhail-smolin-cv-2024.tex" 1717674480 11640 ac683c17015ddf0052ed0de5ab63eda3 ""
   "me.jpg" 1596101136 564176 0b7cd4b4754b161c33d89dd09b708086 ""
-  "mikhail-smolin-cv-2024.aux" 1713965058 1184 c1ac1a563495bdca3cb13bded47272c6 "pdflatex"
-  "mikhail-smolin-cv-2024.out" 1713965058 536 5d0527055f6aa4d6d61425c793dd53fe "pdflatex"
-  "mikhail-smolin-cv-2024.tex" 1713965054 11718 68af930077888a56ae7830339aa335e5 ""
+  "mikhail-smolin-cv-2024.aux" 1717674488 1184 c1ac1a563495bdca3cb13bded47272c6 "pdflatex"
+  "mikhail-smolin-cv-2024.out" 1717674488 536 5d0527055f6aa4d6d61425c793dd53fe "pdflatex"
+  "mikhail-smolin-cv-2024.tex" 1717674480 11640 ac683c17015ddf0052ed0de5ab63eda3 ""
   "signature.pdf" 1689279888 194591 421a0cf6f01003ed94ea94d3252033c6 ""
   (generated)
   "mikhail-smolin-cv-2024.aux"
